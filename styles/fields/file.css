@@ -1,0 +1,23 @@
+.file-wrapper {
+  display: inline-flex;
+  align-items: center;
+
+  & input[type="file"] {
+    display: none;
+  }
+
+  & .file-name::before {
+    display: inline-block;
+    content: "Nenhum arquivo selecionado";
+    font: 400 1rem / normal var(--font-family-3);
+    color: var(--input-placeholder);
+    margin-left: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+    & label:hover {
+      transition: 0.2s ease-in-out;
+      background-color: var(--shape-hover);
+    }
+  }
+

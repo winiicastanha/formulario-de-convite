@@ -1,0 +1,16 @@
+footer {
+  height: 3rem;
+  input {
+    display: none;
+  }
+
+  .input-wrapper {
+    display: flex;
+    justify-content: end;
+  }
+
+  & label:hover {
+    transition: 0.2s ease-in-out;
+    background-color: var(--brand-mid);
+  }
+}
